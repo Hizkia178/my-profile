@@ -52,13 +52,13 @@ const Main = () => {
       name: "DANA",
       number: "085945979113",
       color: "#118EEA",
-      qrCode: "https://via.placeholder.com/150?text=DANA+QR",
+      qrCode: "/assets/qrcode.jpg",
     },
   ];
 
   return (
     <div
-      className="min-vh-100 d-flex align-items-center justify-content-center"
+      className="min-vh-100 d-flex align-items-center justify-content-center overflow-hidden"
       style={{
         background: "linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%)",
       }}
@@ -123,7 +123,7 @@ const Main = () => {
          
             <div className="text-center" data-aos="fade-up" data-aos-delay="400">
               <button
-                className="btn btn-outline-light w-100 rounded-pill py-3 shadow-sm"
+                className="btn btn-light w-100 rounded-pill py-3 shadow"
                 onClick={() => setShowDonationModal(true)}
               >
                 <i className="bx bx-coffee me-2"></i>Buy Me a Coffee
